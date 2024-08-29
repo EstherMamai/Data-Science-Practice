@@ -55,3 +55,22 @@ def get_bigrams(s):
     return [s[i:i+2] for i in range(len(s) - 1)]
 
 print(get_bigrams("hello"))
+
+"""Given a dictionary with keys as letters and values as lists of letters, 
+write a function closest_key to find the key with the input value closest to the beginning of the list.
+"""
+def closest_key(d, value):
+    closest = None
+    min_index = float('inf')
+    
+    for key, values in d.items():
+        if value in values:
+            index = values.index(value)
+            if index < min_index:
+                min_index = index
+                closest = key
+    
+    return closest
+
+d = {'a': ['b', 'c', 'd'], 'e': ['f', 'g', 'b'], 'h': ['i', 'j', 'k']}
+print(closest_key(d, 'c'))  # Output: 'a'
