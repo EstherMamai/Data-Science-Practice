@@ -32,6 +32,20 @@ print(even_numbers)
 
 #3. Nested List Comprehension
 matrix = [[j for j in range(3)] for i in range(3)]
-print(matrix)  
+print(matrix)
 
+"""
+Compound Datatype in Python
+A compound datatype is a datatype that can hold multiple values, possibly of different types.
+"""
+#Example 1: List. A list can hold multiple elements of different types.
+my_list = [1, "hello", 3.14, [1, 2, 3]]
+print(my_list)
 
+#Example 2: Dictionary A dictionary holds key-value pairs, where each key maps to a specific value.
+my_dict = {"name": "Alice", "age": 25, "is_student": True}
+print(my_dict)
+
+#Example 3: Tuple.  A tuple is an immutable sequence of elements, which can also be of different types.
+my_tuple=(90, "Esther", 7.9)
+print(my_tuple)
