@@ -49,3 +49,9 @@ print(my_dict)
 #Example 3: Tuple.  A tuple is an immutable sequence of elements, which can also be of different types.
 my_tuple=(90, "Esther", 7.9)
 print(my_tuple)
+
+#Function to return a list of bigrams from a string
+def get_bigrams(s):
+    return [s[i:i+2] for i in range(len(s) - 1)]
+
+print(get_bigrams("hello"))
